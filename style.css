@@ -1,0 +1,41 @@
+/* ============================================================================
+ * KATALOG JAJANAN - STYLESHEET
+ * ============================================================================ */
+
+body {
+    background-color: #FFFDF9;
+    color: #1c1917;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fef3c7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ea580c;
+    border-radius: 9999px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@keyframes floatSlow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+    animation: floatSlow 3.5s ease-in-out infinite;
+}
